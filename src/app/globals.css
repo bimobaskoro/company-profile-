@@ -206,6 +206,12 @@ div.scrollmenu {
     display: grid;
     grid-template-columns: auto auto auto;
   }
+
+  .grid-custom {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+  }
 }
 
 @media screen and (min-width: 1280px) {

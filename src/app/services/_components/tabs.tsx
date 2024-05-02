@@ -240,7 +240,7 @@ export default function tabs() {
               </div>
               <div className="grid-custom p-4">
                 <div className="grid-custom-item">
-                  <Card className="min-h-[70px]">
+                  <Card className="h-[280px]">
                     <center className="p-2">
                       <Image src="/paint.svg" width="100" height="100" alt="" />
                       <div className="font-bold">Custom Paint Options</div>
@@ -252,7 +252,7 @@ export default function tabs() {
                   </Card>
                 </div>
                 <div className="grid-custom-item">
-                  <Card className="min-h-[70px]">
+                  <Card className="h-[280px]">
                     <center className="p-2">
                       <Image
                         src="/premium.svg"
@@ -270,7 +270,7 @@ export default function tabs() {
                   </Card>
                 </div>
                 <div className="grid-custom-item">
-                  <Card className="min-h-[70px]">
+                  <Card className="h-[280px]">
                     <center className="p-2">
                       <Image
                         src="/technology.svg"
@@ -291,7 +291,7 @@ export default function tabs() {
                   </Card>
                 </div>
                 <div className="grid-custom-item">
-                  <Card className="min-h-[70px]">
+                  <Card className="h-[280px]">
                     <center className="p-2">
                       <Image src="/speed.svg" width="100" height="100" alt="" />
                       <div className="font-bold">Performance Package </div>
@@ -305,7 +305,7 @@ export default function tabs() {
                   </Card>
                 </div>
                 <div className="grid-custom-item">
-                  <Card className="min-h-[70px]">
+                  <Card className="h-[280px]">
                     <center className="p-2">
                       <Image
                         src="/custom.svg"
