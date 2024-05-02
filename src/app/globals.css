@@ -2,32 +2,235 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+.about-section {
+  display: grid;
+  grid-template-columns: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.grid-ps {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+.grid-testimonial {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+
+.octagonWrap {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  overflow: hidden;
+}
+.octagon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  transform: rotate(45deg);
+  background: white;
+  border: 3px solid #861112;
+}
+
+.octagon:hover {
+  background: #861112;
+}
+.octagon:before {
+  position: absolute;
+  top: -3px;
+  right: -3px;
+  bottom: -3px;
+  left: -3px;
+  transform: rotate(45deg);
+  content: "";
+  border: inherit;
+}
+.icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  color: #861112; /* Warna ikon */
+  font-size: 30px; /* Ukuran ikon */
+}
+
+.icon-2-container {
+  background-color: white;
+}
+
+.icon-2-container:hover {
+  background-color: #861112;
+  box-shadow: none;
+}
+.icon-2 {
+  color: #861112; /* Warna ikon */
+}
+
+.icon-2:hover {
+  color: white;
+}
+.octagonWrap:hover .icon {
+  color: white; /* Ubah warna ikon saat dihover */
+}
+
+.upper-line {
+  background-color: #861112;
+  height: 2px;
+  margin: 0 auto 5px;
+  width: 75px;
+}
+
+.bottom-line {
+  background-color: #861112;
+  height: 2px;
+  margin: 0 auto;
+  width: 42px;
+}
+
+.history {
+  clip-path: polygon(100% 0, 102% 100%, 0 100%, 61% 0);
+}
+
+.culture {
+  clip-path: polygon(100% 0, 50% 100%, 0% 110%, 0 0);
+}
+
+.teams-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.card-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #861112;
+  border-radius: 10px;
+}
+
+.card-item:hover .overlay {
+  opacity: 1;
+}
+
+.grid-page-service {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+div.scrollmenu {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.grid-section-car {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.grid-custom {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+}
+@media screen and (min-width: 768px) {
+  .grid-ps {
+    display: grid;
+    grid-template-columns: 345px 345px;
+    margin-left: 25px;
+  }
+
+  .grid-testimonial {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    margin-left: 25px;
+  }
+
+  .grid-choose {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .teams-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+  .grid-brand {
+    display: grid;
+    grid-template-columns: 350px auto;
+  }
+
+  .brand-logo {
+    width: 200px;
+    height: 200px;
+  }
+
+  .grid-custom {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-ps {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+    margin-left: 50px;
+  }
+
+  .grid-testimonial {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    margin-left: 150px;
+  }
+  .grid-choose {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .teams-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+@media screen and (min-width: 1280px) {
+  .grid-ps {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    margin-left: 0px;
+  }
+  .grid-testimonial {
+    display: grid;
+    grid-template-columns: 330px 330px;
+    margin-left: 270px;
+  }
+  .grid-page-service {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+  }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .grid-section-car {
+    display: grid;
+    grid-template-columns: 600px 600px;
+  }
+
+  .right-img {
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
   }
 }
