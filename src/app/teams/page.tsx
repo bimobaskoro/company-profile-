@@ -61,7 +61,7 @@ const Teams = async () => {
           </div>
         </div>
       </div>
-      <div className="grid-teams-page">
+      <div className="grid-teams-page mt-4">
         {data.results?.map((d, i) => (
           <div className="grid-teams-item">
             <div className="px-4 py-2">
