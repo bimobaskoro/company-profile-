@@ -147,6 +147,21 @@ div.scrollmenu {
   grid-template-columns: auto;
   gap: 10px;
 }
+
+.grid-teams-page {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+.mersi {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.porche {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
 @media screen and (min-width: 768px) {
   .grid-ps {
     display: grid;
@@ -185,6 +200,10 @@ div.scrollmenu {
     grid-template-columns: auto auto;
     gap: 10px;
   }
+  .grid-teams-page {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
 }
 @media screen and (min-width: 1024px) {
   .grid-ps {
@@ -212,6 +231,11 @@ div.scrollmenu {
     grid-template-columns: auto auto auto;
     gap: 10px;
   }
+
+  .grid-teams-page {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -237,6 +261,16 @@ div.scrollmenu {
 
   .right-img {
     -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+  }
+
+  .mersi {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+
+  .ferari {
+    -webkit-transform: scaleX(-11);
     transform: scaleX(-1);
   }
 }

@@ -44,10 +44,18 @@ export default function RootLayout({
             </div>
           </div>
           <div className="grid-cols-1 flex justify-center items-center border-t border-white text-white text-[10px] p-3">
-            <span className="mr-2">Home</span>
-            <span className="mr-2">About Us</span>
-            <span className="mr-2">Our Service</span>
-            <span className="mr-2">Teams</span>
+            <a href="/" className="mr-2">
+              Home
+            </a>
+            <a href="/about" className="mr-2">
+              About Us
+            </a>
+            <a href="/services" className="mr-2">
+              Our Service
+            </a>
+            <a href="/teams" className="mr-2">
+              Teams
+            </a>
           </div>
           <div className="bg-[#171717] text-white text-[8px]">
             <center>© Elite Motors</center>

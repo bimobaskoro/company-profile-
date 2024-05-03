@@ -45,7 +45,7 @@ export default function Home() {
                           enthusiasts.
                         </div>
                         <div>
-                          <button className="bg-white text-[#861112] font-bold p-1 mt-1 rounded-sm">
+                          <button className="bg-white text-[#861112] font-bold p-1 mt-1 rounded-[5px]">
                             Find More
                           </button>
                         </div>

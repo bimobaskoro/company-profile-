@@ -27,10 +27,10 @@ export default function NavbarComponent() {
         <Navbar.Toggle aria-controls="responsive-navbar-nav" />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#features">Home</Nav.Link>
-            <Nav.Link href="#pricing">About Us</Nav.Link>
-            <Nav.Link href="#pricing">Our Sevice</Nav.Link>
-            <Nav.Link href="#pricing">Our Teams</Nav.Link>
+            <Nav.Link href="/">Home</Nav.Link>
+            <Nav.Link href="/about">About Us</Nav.Link>
+            <Nav.Link href="/services">Our Sevice</Nav.Link>
+            <Nav.Link href="/teams">Our Teams</Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
