@@ -211,7 +211,7 @@ const About = async () => {
       <div className="teams-grid">
         {data.results?.map((d, i) => (
           <div className="px-4 py-2">
-            <Card className="card-item p-2">
+            <Card className="card-item p-2 rounded-[10px]">
               <div className="p-2">
                 <center>
                   <Image
