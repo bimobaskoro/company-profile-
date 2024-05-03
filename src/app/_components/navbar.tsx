@@ -19,7 +19,7 @@ export default function NavbarComponent() {
       //   style={{ backgroundColor: "#171717" }}
     >
       <Container>
-        <Navbar.Brand href="#home">
+        <Navbar.Brand>
           <div className=" w-24 h-12">
             <img className="w-full h-full object-cover" src="/logo.svg" />
           </div>
